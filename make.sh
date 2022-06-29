@@ -15,13 +15,11 @@ function build {
   time preston ls\
 | preston plazi-stream\
 | grep "Handbook of the Mammals of the World"\
-| gzip\
-> hmw.json.gz
+> hmw.json
 }
 
 function convert {
-  time cat hmw.json.gz\
-| gunzip\
+  time cat hmw.json\
 | jq -f schema.jq\
 | mlr --ijson --ocsv cat\
 | tee hmw.csv
