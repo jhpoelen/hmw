@@ -25,8 +25,21 @@ function convert {
 | tee hmw.csv
 }
 
+function create_samples {
+  cat hmw.csv\
+  | head -n11\
+  > hmw-sample.csv
+  
+  cat hmw.json\
+  | head -n10\
+  | tee hmw-sample.json\
+  | jq .\
+  > hmw-sample-pretty.json
+}
 preston version
 
 track
 build
 convert
+create_samples
+
