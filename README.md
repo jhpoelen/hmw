@@ -39,7 +39,7 @@ Please see release attachment ```preston-data.zip``` for underlying data.
 
 ```
 $ preston history
-<urn:uuid:0659a54f-b713-4f86-a917-5be166a14110> <http://purl.org/pav/hasVersion> <hash://sha256/c93d0d5257dabe02fd300b57296253bb3557f9dcd1e0ca8ccb469dbfe7904ab9> .
+<urn:uuid:0659a54f-b713-4f86-a917-5be166a14110> <http://purl.org/pav/hasVersion> <hash://sha256/a965b45916bcffb49aa572675970f002e4e839cead8c1957dc5ba638c838b9b6> .
 ```
 
 and other content ids include:
@@ -49,5 +49,5 @@ $ preston ls\
 | grep -o -E "hash://sha256/[0-9a-f]{64}"\
 | sort\
 | uniq
-hash://sha256/7dc6794d4c2abc3895d5c497824146bfdcc08017da7731e80431d5d07036f347
+hash://sha256/15afc61b5914e4b6899b43a5eda355497d5c5d0c4b401c884c8056f418c9665b
 ```
