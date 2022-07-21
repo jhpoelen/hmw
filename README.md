@@ -10,21 +10,37 @@ This work originates from the Biodiversity Data Hub working group of the CETAF C
 
 
 # Methods
+
+The csv and json files are roughly generated via:
+
+```
+# get the recent version of Plazi's treatments in xml format
+preston track https://github.com/plazi/treatments-xml/archive/master.zip 
+
+# transform only HMW treatments into json using preston
+preston ls | preston plazi-stream | grep "Handbook of the Mammals of the World" > hmw.json 
+
+# convert json into csv
+cat hmw.json | [some magic] > hmw.csv
+```
+
 The csv files are generated using [jq](https://stedolan.github.io/jq/) using [schema.jq](schema.jq) and Miller (https://miller.readthedocs.io/en/latest/). 
 
-See [make.sh](make.sh) for details on how these files were generated.
+See [make.sh](make.sh) for more details on how these files were generated. 
+
+If you'd like you can generate your own files by running make.sh after installing the dependencies [preston](https://github.com/bio-guoda/preston), [jq](https://stedolan.github.io/jq/), and Miller (https://miller.readthedocs.io/en/latest/).
 
 # Results
 
 The following results were generated on 2022-07-20 :
 
 | filename | description | contentId |
-| --- | --- |
-| hmw.csv | all extracted mammal descriptions in comma-separated values (CSV) | hash://sha256/987bed74c31a206a515f8ea5551ada5660577e88521886dc6cf71d1f30280299 | 
-| hmw.json | extracted mammal description in [line-json](https://en.wikipedia.org/wiki/JSON_streaming#Line-delimited_JSON) | hash://sha256/96883965cce8729ec087d0c2587dc9f527054b2cee0585a4f7f32394fd46e6af
-| hmw-sample.csv | header + first 10 records | hash://sha256/7bb19ea2496a9175d45a427c9ceab985bc9dc2cdc60f031923c42d5ac6bfca83
-| hmw-sample.json | first 10 [line-json](https://en.wikipedia.org/wiki/JSON_streaming#Line-delimited_JSON) records | hash://sha256/7bb19ea2496a9175d45a427c9ceab985bc9dc2cdc60f031923c42d5ac6bfca83 
-| hmw-sample-pretty.json | first 10 json record pretty printed | hash://sha256/7bb19ea2496a9175d45a427c9ceab985bc9dc2cdc60f031923c42d5ac6bfca83
+| --- | --- | --- |
+| [hmw.csv](hmw.csv) | all extracted mammal descriptions in comma-separated values (CSV) | hash://sha256/987bed74c31a206a515f8ea5551ada5660577e88521886dc6cf71d1f30280299 | 
+| [hmw.json](hmw.json) | extracted mammal description in [line-json](https://en.wikipedia.org/wiki/JSON_streaming#Line-delimited_JSON) | hash://sha256/96883965cce8729ec087d0c2587dc9f527054b2cee0585a4f7f32394fd46e6af
+| [hmw-sample.csv](hmw-sample.csv) | header + first 10 records | hash://sha256/7bb19ea2496a9175d45a427c9ceab985bc9dc2cdc60f031923c42d5ac6bfca83
+| [hmw-sample.json](hmw-sample.json) | first 10 [line-json](https://en.wikipedia.org/wiki/JSON_streaming#Line-delimited_JSON) records | hash://sha256/7bb19ea2496a9175d45a427c9ceab985bc9dc2cdc60f031923c42d5ac6bfca83 
+| [hmw-sample-pretty.json](hmw-sample-pretty.json) | first 10 json record pretty printed | hash://sha256/7bb19ea2496a9175d45a427c9ceab985bc9dc2cdc60f031923c42d5ac6bfca83
 
 
 # Summary Statistics
