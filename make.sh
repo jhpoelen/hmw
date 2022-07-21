@@ -35,7 +35,15 @@ function create_samples {
   | tee hmw-sample.json\
   | jq .\
   > hmw-sample-pretty.json
+
+  cat hmw.json\
+  | jq --raw-output .name\
+  | sort\
+  | uniq\
+  > names.txt
+
 }
+
 preston version
 
 track

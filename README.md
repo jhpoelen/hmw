@@ -37,12 +37,12 @@ The following results were generated on 2022-07-20 :
 
 | filename | description | contentId |
 | --- | --- | --- |
+| names.txt | all included species name in alphabetical order | hash://sha256/333a1ee211077efdcf282989ff9f5212409faa1a62e28f947fe19351e70d6794 | 
 | [hmw.csv](hmw.csv) | all extracted mammal descriptions in comma-separated values (CSV) | hash://sha256/987bed74c31a206a515f8ea5551ada5660577e88521886dc6cf71d1f30280299 | 
 | [hmw.json](hmw.json) | extracted mammal description in [line-json](https://en.wikipedia.org/wiki/JSON_streaming#Line-delimited_JSON) | hash://sha256/96883965cce8729ec087d0c2587dc9f527054b2cee0585a4f7f32394fd46e6af
 | [hmw-sample.csv](hmw-sample.csv) | header + first 10 records | hash://sha256/7bb19ea2496a9175d45a427c9ceab985bc9dc2cdc60f031923c42d5ac6bfca83
 | [hmw-sample.json](hmw-sample.json) | first 10 [line-json](https://en.wikipedia.org/wiki/JSON_streaming#Line-delimited_JSON) records | hash://sha256/7bb19ea2496a9175d45a427c9ceab985bc9dc2cdc60f031923c42d5ac6bfca83 
 | [hmw-sample-pretty.json](hmw-sample-pretty.json) | first 10 json record pretty printed | hash://sha256/7bb19ea2496a9175d45a427c9ceab985bc9dc2cdc60f031923c42d5ac6bfca83
-
 
 # Summary Statistics
 
