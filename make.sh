@@ -44,10 +44,19 @@ function create_samples {
 
 }
 
+function check {
+  cat hmw.json\
+  | ./check.sh\
+  | wc -l
+}
+
 preston version
 
 track
 build
 convert
 create_samples
+
+echo number of records found with unexpected empty field values:
+check
 
