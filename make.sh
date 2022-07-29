@@ -12,8 +12,7 @@ function track {
 }
 
 function build {
-  time preston ls\
-| preston plazi-stream\
+  preston plazi-stream\
 | grep "Handbook of the Mammals of the World"\
 > hmw.json
 }
@@ -52,8 +51,10 @@ function check {
 
 preston version
 
-track
-build
+time track\
+| tee prov.nq\
+| build
+
 convert
 create_samples
 
