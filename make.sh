@@ -52,7 +52,7 @@ function check {
 preston version
 
 time track\
-| tee prov.nq\
+| tee hmw-prov.nq\
 | build
 
 convert

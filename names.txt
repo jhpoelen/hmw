@@ -298,6 +298,7 @@ Arctonyx collaris
 Ardops nichollsi
 Arielulus circumdatus
 Arielulus cuprosus
+Arielulus societatis
 Ariteus flavescens
 Artibeus aequatorialis
 Artibeus amplus
@@ -614,6 +615,7 @@ Capra caucasica
 Capra cylindricornis
 Capra falconeri
 Capra ibex
+Capra nubiana
 Capra pyrenaica
 Capra sibirica
 Capra walie
@@ -1923,6 +1925,7 @@ Gerbillus gerbillus
 Gerbillus gleadowi
 Gerbillus grobbeni
 Gerbillus harwoodi
+Gerbillus henleyi
 Gerbillus hesperinus
 Gerbillus hoogstraali
 Gerbillus jamesi
@@ -3162,6 +3165,7 @@ Molossops temminckii
 Molossus alvarezi
 Molossus aztecus
 Molossus coibensis
+Molossus currentium
 Molossus fentoni
 Molossus milleri
 Molossus molossus
@@ -4751,6 +4755,7 @@ Pteropus faunulus
 Pteropus fundatus
 Pteropus griseus
 Pteropus howensis
+Pteropus hypomelanus
 Pteropus keyensis
 Pteropus livingstonii
 Pteropus lombocensis
