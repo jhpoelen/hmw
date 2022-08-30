@@ -35,6 +35,12 @@ function create_samples {
   | jq .\
   > hmw-sample-pretty.json
 
+  seq 1 9\
+  | xargs -L1 -I {} sh -c 'cat hmw.csv | head -n1 > hmw-volume-{}.csv'
+
+  seq 1 9\
+  | xargs -L1 -I {} sh -c 'cat hmw.csv | grep "Volume {}" >> hmw-volume-{}.csv'
+
   cat hmw.json\
   | jq --raw-output .name\
   | sort\
@@ -51,13 +57,13 @@ function check {
 
 preston version
 
-time track\
-| tee hmw-prov.nq\
-| build
+#time track\
+#| tee hmw-prov.nq\
+#| build
 
-convert
+#convert
 create_samples
 
 echo number of records found with unexpected empty field values:
-check
+#check
 
