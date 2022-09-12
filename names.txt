@@ -825,7 +825,7 @@ Chilomys fumeus
 Chilomys instans
 Chilonatalus macer
 Chilonatalus micropus
-Chilonatalus tumaidifrons
+Chilonatalus tumidifrons
 Chimarrogale hantu
 Chimarrogale himalayica
 Chimarrogale leander
@@ -1625,7 +1625,7 @@ Emballonura furax
 Emballonura monticola
 Emballonura raffrayana
 Emballonura semicaudata
-Emballonura seni
+Emballonura serii
 Enchisthenes hartii
 Enhydra lutris
 Eoglaucomys fimbriatus
@@ -1742,6 +1742,7 @@ Eumops chiribaya
 Eumops dabbenei
 Eumops delticus
 Eumops ferox
+Eumops floridanus
 Eumops glaucinus
 Eumops hansae
 Eumops maurus
@@ -1789,7 +1790,6 @@ Felis silvestris
 Felovia vae
 Feresa attenuata
 Feroculus feroculus
-FEumops floridanus
 Fossa fossana
 Fuchoreutes naso
 Fukomys amatus
@@ -1978,6 +1978,8 @@ Glis glis
 Globicephala macrorhynchus
 Globicephala melas
 Glossophaga commissarisi
+Glossophaga leachii
+Glossophaga longirostris
 Glossophaga morenoi
 Glossophaga soricina
 Glyphonycteris behnii
@@ -2745,7 +2747,6 @@ Mallomys istapantap
 Mallomys rothschildi
 Mammelomys lanosus
 Mammelomys rattoides
-Manaopterus brachytragos
 Mandrillus leucophaeus
 Mandrillus sphinx
 Manis crassicaudata
@@ -3028,6 +3029,7 @@ Micronycteris megalotis
 Micronycteris microtis
 Micronycteris minuta
 Micronycteris sanborni
+Micronycteris schmidtorum
 Micronycteris yatesi
 Microperoryctes aplin
 Microperoryctes longicauda
@@ -3112,6 +3114,7 @@ Miniopterus ambohitrensis
 Miniopterus arenarius
 Miniopterus australis
 Miniopterus blepotis
+Miniopterus brachytragos
 Miniopterus egeri
 Miniopterus eschscholtzii
 Miniopterus fraterculus
@@ -3129,6 +3132,7 @@ Miniopterus majori
 Miniopterus manavi
 Miniopterus medius
 Miniopterus minor
+Miniopterus mossambicus
 Miniopterus natalensis
 Miniopterus newtoni
 Miniopterus orianae
@@ -3215,7 +3219,7 @@ Mops petersoni
 Mops sarasinorum
 Mops spurrelli
 Mops thersites
-Mops trevor
+Mops trevori
 Mormoops blainvillei
 Mormoops megalophylla
 Mormopterus acetabulosus
@@ -3241,13 +3245,11 @@ Mpyosorex babaultu
 Mucrocavia niata
 Mucrogalefotsifotsy
 Mucrogale longicaudata
-Mucronycteris schmidtorum
 Muicrogale grandidieri
 Muicrogale pusilla
 Mungos gambianus
 Mungos mungo
 Mungotictis decemlineata
-Muniopterus mossambicus
 Muntiacus atherodes
 Muntiacus crinifrons
 Muntiacus feae
@@ -3826,9 +3828,9 @@ Nyctophilus geoffroyi
 Nyctophilus gouldi
 Nyctophilus heran
 Nyctophilus howensis
-Nyctophilus macrotis
 Nyctophilus major
 Nyctophilus microdon
+Nyctophilus microtis
 Nyctophilus nebulosus
 Nyctophilus sherrini
 Nyctophilus shirleyae
@@ -4434,6 +4436,7 @@ Piliocolobus waldronae
 Pipanacoctomys aureus
 Pipistrellus abramus
 Pipistrellus adamsi
+Pipistrellus aero
 Pipistrellus angulatus
 Pipistrellus ceylonicus
 Pipistrellus collinus
@@ -4441,28 +4444,27 @@ Pipistrellus coromandra
 Pipistrellus creticus
 Pipistrellus dhofarensis
 Pipistrellus endoi
+Pipistrellus hanaki
 Pipistrellus hesperidus
 Pipistrellus inexspectatus
 Pipistrellus javanicus
 Pipistrellus kuhlii
 Pipistrellus maderensis
+Pipistrellus minahassae
 Pipistrellus nanulus
 Pipistrellus nathusii
+Pipistrellus papuanus
+Pipistrellus paterculus
 Pipistrellus permixtus
 Pipistrellus pipistrellus
 Pipistrellus pygmaeus
 Pipistrellus raceyi
+Pipistrellus rusticus
 Pipistrellus stenopterus
 Pipistrellus sturdeei
 Pipistrellus tenuis
-Pipustrellus aero
-Pipustrellus hanaki
-Pipustrellus minahassae
-Pipustrellus papuanus
-Pipustrellus paterculus
-Pipustrellus rusticus
+Pipistrellus westralis
 Pipustrellus wattsi
-Pipustrellus westralis
 Pithecheir melanurus
 Pithecheirops otion
 Pithecheir parvus
@@ -4519,8 +4521,6 @@ Plecotus taivanus
 Plecotus teneriffae
 Plecotus turkmenicus
 Plecotus wardi
-Pleralopex atrata
-Pleralopex flanneryi
 Pleronotus fuscus
 Pleronotus macleayii
 Pleronotus quadridens
@@ -4722,6 +4722,8 @@ Ptenochirus jagorii
 Ptenochirus minor
 Ptenochirus wetmorei
 Pteralopex anceps
+Pteralopex atrata
+Pteralopex flanneryi
 Pteralopex pulchra
 Pteralopex taki
 Pteromyscus pulverulentus
@@ -4753,6 +4755,7 @@ Pteropus dasymallus
 Pteropus ennisae
 Pteropus faunulus
 Pteropus fundatus
+Pteropus gilliardorum
 Pteropus griseus
 Pteropus howensis
 Pteropus hypomelanus
@@ -4760,6 +4763,7 @@ Pteropus keyensis
 Pteropus livingstonii
 Pteropus lombocensis
 Pteropus lylei
+Pteropus macrotis
 Pteropus mahaganus
 Pteropus mariannus
 Pteropus medius
@@ -4934,6 +4938,7 @@ Rhinoceros sondaicus
 Rhinoceros unicornis
 Rhinolophus achilles
 Rhinolophus acuminatus
+Rhinolophus adami
 Rhinolophus affinis
 Rhinolophus alcyone
 Rhinolophus alticolus
@@ -4951,14 +4956,14 @@ Rhinolophus chaseni
 Rhinolophus chiewkweeae
 Rhinolophus clivosus
 Rhinolophus coelophyllus
-Rhinolophus cognotus
+Rhinolophus cognatus
 Rhinolophus cohenae
-Rhinolophus comutus
 Rhinolophus convexus
+Rhinolophus cornutus
 Rhinolophus creaghi
 Rhinolophus damarensis
 Rhinolophus darlingi
-Rhinolophus deckend
+Rhinolophus deckenii
 Rhinolophus denti
 Rhinolophus eloquens
 Rhinolophus episcopus
@@ -5002,7 +5007,6 @@ Rhinolophus morio
 Rhinolophus mossambicus
 Rhinolophus nereis
 Rhinolophus nippon
-Rhinolophus odami
 Rhinolophus osgoodi
 Rhinolophus pearsonii
 Rhinolophus perditus
@@ -5652,7 +5656,7 @@ Tadarida aegyptiaca
 Tadarida brasiliensis
 Tadarida fulminans
 Tadarida insignis
-Tadarida latouchet
+Tadarida latouchei
 Tadarida lobata
 Tadarida teniotis
 Tadarida ventralis
@@ -5760,8 +5764,8 @@ Taxidea taxus
 Tayassu pecari
 Tenrec ecaudatus
 Tetracerus quadricornis
-Thainycleris torquatus
 Thainycteris aureocollaris
+Thainycteris torquatus
 Thallomys loringi
 Thallomys nigricauda
 Thallomys paedulcus

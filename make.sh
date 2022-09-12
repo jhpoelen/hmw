@@ -57,13 +57,13 @@ function check {
 
 preston version
 
-#time track\
-#| tee hmw-prov.nq\
-#| build
+time track\
+| tee hmw-prov.nq\
+| build
 
-#convert
+convert
 create_samples
 
 echo number of records found with unexpected empty field values:
-#check
+check
 
