@@ -8,16 +8,19 @@
 set -x
 
 function track { 
+  # downloads latest copy of Plazi's treatments-xml and versions them
   preston track https://github.com/plazi/treatments-xml/archive/master.zip
 }
 
 function build {
+  # convert a versioned copy of Plazi's Treatments-XML into JSON (Javascript Object Notation)
   preston plazi-stream\
 | grep "Handbook of the Mammals of the World"\
 > hmw.json
 }
 
 function convert {
+  # converts Preston generated json into tabular csv
   time cat hmw.json\
 | jq -f schema.jq\
 | mlr --ijson --ocsv cat\
