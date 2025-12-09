@@ -15,8 +15,8 @@ This work originates from the Biodiversity Data Hub working group of the CETAF C
 The csv and json files are roughly generated via:
 
 ```
-# get the recent version of Plazi's treatments in xml format
-preston track https://github.com/plazi/treatments-xml/archive/master.zip 
+# get the recent version of Plazi's treatments in xml format from https://tb.plazi.org/dumps
+preston track https://tb.plazi.org/dumps/plazi.xml.zip https://tb.plazi.org/dumps/plazi.xml.monthly.zip https://tb.plazi.org/dumps/plazi.xml.weekly.zip  https://tb.plazi.org/dumps/plazi.xml.daily.zip
 
 # transform only HMW treatments into json using preston
 preston ls | preston plazi-stream | grep "Handbook of the Mammals of the World" > hmw.json 

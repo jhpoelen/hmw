@@ -8,8 +8,12 @@
 set -x
 
 function track { 
-  # downloads latest copy of Plazi's treatments-xml and versions them
-  preston track https://github.com/plazi/treatments-xml/archive/master.zip
+  # get the recent version of Plazi's treatments in xml format from https://tb.plazi.org/dumps
+  preston track\
+   https://tb.plazi.org/dumps/plazi.xml.zip \
+   https://tb.plazi.org/dumps/plazi.xml.monthly.zip \
+   https://tb.plazi.org/dumps/plazi.xml.weekly.zip \
+   https://tb.plazi.org/dumps/plazi.xml.daily.zip
 }
 
 function build {
