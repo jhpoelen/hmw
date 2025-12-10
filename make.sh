@@ -9,7 +9,7 @@ set -x
 
 function track { 
   # get the recent version of Plazi's treatments in xml format from https://tb.plazi.org/dumps
-  preston track\
+  preston track \
    https://tb.plazi.org/dumps/plazi.xml.zip \
    https://tb.plazi.org/dumps/plazi.xml.monthly.zip \
    https://tb.plazi.org/dumps/plazi.xml.weekly.zip \
@@ -64,9 +64,12 @@ function check {
 
 preston version
 
-time track\
-| tee hmw-prov.nq\
-| build
+time track
+
+preston head\
+  | preston cat\
+  | tee hmw-prov.nq\
+  | build
 
 convert
 create_samples
