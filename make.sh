@@ -49,7 +49,7 @@ function convert {
   time cat hmw.json\
     | jq -f schema.jq\
     | mlr --ijson --ocsv cat\
-    | tee hmw.csv
+    > hmw.csv
 }
 
 function create_samples {
@@ -64,10 +64,10 @@ function create_samples {
     > hmw-sample-pretty.json
 
   seq 1 9\
-    | xargs -L1 -I {} sh -c 'cat hmw.csv | head -n1 > hmw-volume-{}.csv'
+    | xargs -I{} sh -c 'cat hmw.csv | head -n1 > hmw-volume-{}.csv'
 
   seq 1 9\
-    | xargs -L1 -I {} sh -c 'cat hmw.csv | grep "Volume {}" >> hmw-volume-{}.csv'
+    | xargs -I {} sh -c 'cat hmw.csv | grep "Volume {}" >> hmw-volume-{}.csv'
 
   cat hmw.json\
     | jq --raw-output .name\
