@@ -20,11 +20,13 @@ function build {
   # convert a versioned copy of Plazi's Treatments-XML into JSON (Javascript Object Notation)
   preston plazi-stream \
   | grep "Handbook of the Mammals of the World"\
-  > hmw-with-updates.json
+  > hmw-old-and-current.json
 }
 
 function keep_newest {
-  cat hmw-with-updates.json \
+  # treatments may have been updated in monthly/ weeky/ daily dumps
+  # keep only the most recent version to avoid outdated treatments
+  cat hmw-old-and-current.json \
     | jq --raw-output .docId \
     | sort \
     | uniq -c \
@@ -39,7 +41,7 @@ function keep_newest {
     | xargs -I{} sh -c 'cat hmw.json | grep {} | tail -1' \
     > hmw.json
 
-  cat hmw-with-updates.json \
+  cat hmw-old-and-current.json \
     | grep -v -f docIds-with-updates.txt \
     >> hmw.json
 }
