@@ -18,48 +18,68 @@ function track {
 
 function build {
   # convert a versioned copy of Plazi's Treatments-XML into JSON (Javascript Object Notation)
-  preston plazi-stream\
-| grep "Handbook of the Mammals of the World"\
-> hmw.json
+  preston plazi-stream \
+  | grep "Handbook of the Mammals of the World"\
+  > hmw-with-updates.json
+}
+
+function keep_newest {
+  cat hmw-with-updates.json \
+    | jq --raw-output .docId \
+    | sort \
+    | uniq -c \
+    | sort -nr \
+    | grep -Ev "^[ ]+1" \
+    | grep -Eo '[A-F0-9]{3,}' \
+    | sort \
+    | uniq \
+    > docIds-with-updates.txt
+
+  cat docIds-with-updates.txt \
+    | xargs -I{} sh -c 'cat hmw.json | grep {} | tail -1' \
+    > hmw.json
+
+  cat hmw-with-updates.json \
+    | grep -v -f docIds-with-updates.txt \
+    >> hmw.json
 }
 
 function convert {
   # converts Preston generated json into tabular csv
   time cat hmw.json\
-| jq -f schema.jq\
-| mlr --ijson --ocsv cat\
-| tee hmw.csv
+    | jq -f schema.jq\
+    | mlr --ijson --ocsv cat\
+    | tee hmw.csv
 }
 
 function create_samples {
   cat hmw.csv\
-  | head -n11\
-  > hmw-sample.csv
+    | head -n11\
+    > hmw-sample.csv
   
   cat hmw.json\
-  | head -n10\
-  | tee hmw-sample.json\
-  | jq .\
-  > hmw-sample-pretty.json
+    | head -n10\
+    | tee hmw-sample.json\
+    | jq .\
+    > hmw-sample-pretty.json
 
   seq 1 9\
-  | xargs -L1 -I {} sh -c 'cat hmw.csv | head -n1 > hmw-volume-{}.csv'
+    | xargs -L1 -I {} sh -c 'cat hmw.csv | head -n1 > hmw-volume-{}.csv'
 
   seq 1 9\
-  | xargs -L1 -I {} sh -c 'cat hmw.csv | grep "Volume {}" >> hmw-volume-{}.csv'
+    | xargs -L1 -I {} sh -c 'cat hmw.csv | grep "Volume {}" >> hmw-volume-{}.csv'
 
   cat hmw.json\
-  | jq --raw-output .name\
-  | sort\
-  | uniq\
-  > names.txt
-
+    | jq --raw-output .name\
+    | sort\
+    | uniq\
+    > names.txt
 }
 
 function check {
   cat hmw.json\
-  | ./check.sh\
-  | wc -l
+    | ./check.sh\
+    | wc -l
 }
 
 preston version
@@ -71,6 +91,7 @@ preston head\
   | tee hmw-prov.nq\
   | build
 
+keep_newest
 convert
 create_samples
 
