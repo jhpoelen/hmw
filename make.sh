@@ -38,7 +38,7 @@ function keep_newest {
     > docIds-with-updates.txt
 
   cat docIds-with-updates.txt \
-    | xargs -I{} sh -c 'cat hmw.json | grep {} | tail -1' \
+    | xargs -I{} sh -c 'cat hmw-old-and-current.json | grep {} | tail -1' \
     > hmw.json
 
   cat hmw-old-and-current.json \
