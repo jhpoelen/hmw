@@ -205,7 +205,7 @@ Anoura latidens
 Anoura luismanueli
 Anoura peruana
 Anourosorex assamensis
-Anourosorex schmid
+Anourosorex schmidi
 Anourosorex squamaipes
 Anourosorex yamashinai
 Antechinomys laniger
@@ -784,6 +784,7 @@ Chaerephon russatus
 Chaerephon solomonis
 Chaerephon tomensis
 Chaetocauda sichuanensis
+Chaetodipus ammophilus
 Chaetodipus arenarius
 Chaetodipus artus
 Chaetodipus baileyi
@@ -1502,6 +1503,7 @@ Dipodomys compactus
 Dipodomys deserti
 Dipodomys elator
 Dipodomys gravipes
+Dipodomys heermanni
 Dipodomys ingens
 Dipodomys merriami
 Dipodomys microps
@@ -1509,6 +1511,7 @@ Dipodomys nelsoni
 Dipodomys nitratoides
 Dipodomys ordii
 Dipodomys ornatus
+Dipodomys panamintinus
 Dipodomys phillipsii
 Dipodomys simulans
 Dipodomys spectabilis
@@ -2110,6 +2113,7 @@ Heterogeomys hispidus
 Heterogeomys lanius
 Heterogeomys underwoodi
 Heterohyrax brucei
+Heteromys adspersus
 Heteromys anomalus
 Heteromys australis
 Heteromys catopterius
@@ -2122,6 +2126,7 @@ Heteromys nubicolens
 Heteromys oasicus
 Heteromys oresterus
 Heteromys pictus
+Heteromys salvini
 Heteromys spectabilis
 Heteromys teleus
 Hippocamelus antisensis
@@ -4269,8 +4274,6 @@ Petaurista yunanensis
 Petauroides armillatus
 Petauroides minor
 Petauroides volans
-Petaurus abidi
-Petaurus australis
 Petaurus biacensis
 Petaurus breviceps
 Petaurus gracilis
@@ -4524,9 +4527,6 @@ Plecotus wardi
 Pleronotus fuscus
 Pleronotus macleayii
 Pleronotus quadridens
-Pleropus alecto
-Pleropus capistratus
-Pleropus melanopogon
 Plerotes anchietae
 Podogymnura aureospinula
 Podogymnura truei
@@ -4745,9 +4745,11 @@ Pteronotus rubiginosus
 Pteronura brasiliensis
 Pteropus admiralitatum
 Pteropus aldabrensis
+Pteropus alecto
 Pteropus anetianus
 Pteropus aruensis
 Pteropus caniceps
+Pteropus capistratus
 Pteropus chrysoproctus
 Pteropus cognatus
 Pteropus conspicillatus
@@ -4767,6 +4769,7 @@ Pteropus macrotis
 Pteropus mahaganus
 Pteropus mariannus
 Pteropus medius
+Pteropus melanopogon
 Pteropus melanotus
 Pteropus molossinus
 Pteropus neohibernicus
